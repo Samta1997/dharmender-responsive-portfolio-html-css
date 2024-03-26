@@ -12,8 +12,8 @@
 html {
   font-size: 62.5%;
   /* 1rem = 10px  */
-  /* scroll-behavior: smooth; */
-  scroll-snap-type: Y proximity;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: Y proximity; */
 }
 
 h1,
@@ -323,6 +323,44 @@ main {
 }
 
 /***** End about Section *****/
+
+/***** Project Section  *****/
+.section-project{
+  background-color: var(--bg-color);
+}
+.section-project .grid{
+  gap: 6.4rem;
+}
+.project-div{
+  box-shadow: var(--btn-box-shadow);
+  &:hover{
+    scale: 1.1;
+  }
+  transition: all 0.2s ease;
+}
+.project-image{
+  & figure{
+    display: block;
+    & figcaption{
+      padding:1rem 0 1.5rem 2rem;
+      font-size: 1.8rem;
+    }
+    & img{
+      width: 100%;
+    }
+    & .project-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & a{
+        padding-right: 2rem;
+      }
+    }
+
+  } 
+}
+
+/***** End Project Section  *****/
 
 /***** course Section *****/
 
@@ -696,6 +734,17 @@ footer .grid {
     }
   }
 }
+.footer-4--div .blog_link{
+  &:hover{
+    text-decoration: underline;
+  }
+} 
+
+
+.blog1 .title{
+  font-size: 5rem;
+  font-weight: 900;
+}
 
 /* footer .footer-1-div .footer-social--icons {
   display: flex;
@@ -851,12 +900,19 @@ footer .footer-1-div .fa-brands:hover {
       margin-top: 6.4rem;
     }
   }
+  .section-project .grid-four--cols{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
 
 @media (width <= 768px) {
   .grid-two--cols,
   .grid-three--cols {
     grid-template-columns: 1fr;
+  }
+  
+  .section-project .grid-four--cols{
+    grid-template-columns: 0.7fr 0.7fr;
   }
 
   .section-navbar .container {
@@ -906,3 +962,5 @@ footer .footer-1-div .fa-brands:hover {
 }
 
 /***** End media queries Section *****/
+
+
