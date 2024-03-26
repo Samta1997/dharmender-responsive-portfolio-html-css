@@ -18,13 +18,13 @@ This is a fully responsive portfolio design created using HTML and CSS. It's des
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/responsive-portfolio.git
+   git clone https://github.com/your-username/dharmender-responsive-portfolio-html-css.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd responsive-portfolio
+   cd dharmender-responsive-portfolio-html-css
    ```
 
 3. Open the `index.html` file in your web browser to view the portfolio.
